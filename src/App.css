@@ -1,0 +1,108 @@
+.container {
+
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 5fr;
+    min-height: 90vh;
+    width: 100%;
+    margin: auto;
+    background-color: #f3f3f3;
+
+}
+
+.room-list {}
+
+.room-li {
+    overflow-y: auto;
+    height: 90vh;
+}
+
+.room {
+    border-bottom: 1px solid rgb(192, 190, 190);
+    padding: 20px 10px;
+}
+
+.room:hover {
+    background-color: #ffffff;
+}
+
+.room-form {
+    position: absolute;
+    bottom: 0;
+    padding: 10px 5px;
+    width: 170px;
+}
+
+.message-list {}
+
+
+.message-form {
+    padding: 10px 5px;
+}
+
+.message-form button {
+    padding: 10px;
+    border: none;
+    background-color: rgb(192, 190, 190);
+}
+
+.message-form button:hover {
+    background-color: #ffffff;
+}
+
+
+.room-form input {
+    width: 100%;
+    padding: 10px;
+}
+
+.message-form input {
+    padding: 10px;
+    width: 90%;
+}
+
+/* message list */
+.message-body {
+    background-color: rgb(71, 68, 68);
+    padding: 6px;
+    overflow-y: auto;
+    height: 84.8vh;
+}
+
+.mode {
+    position: absolute;
+    right: 0;
+    margin: 5px;
+}
+
+.message {
+    padding: 6px 7px 8px 9px;
+    font: inherit;
+    vertical-align: initial;
+    outline: none;
+    border: 0;
+    width: 200px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    margin: 30px;
+}
+
+.message:hover {
+    background-color: #f3f3f3;
+}
+
+.msg-name {
+    color: rgb(0, 119, 255);
+}
+
+@media screen and (max-width:600px) {
+    .container {
+        grid-template-columns: 1fr;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .room-li {
+        display: none;
+    }
+}
